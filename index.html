@@ -1,0 +1,209 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Exam Quick Reference - Python + Web Technologies</title>
+<style>
+body{font-family:Arial,sans-serif;max-width:1050px;margin:25px auto;padding:0 18px;line-height:1.4}
+h1{font-size:26px} h2{margin-top:36px;border-bottom:2px solid #777;padding-bottom:5px}
+h3{margin-top:26px}
+.question{font-weight:bold;font-size:18px}
+.keyword{font-size:13px}
+pre{background:#f4f4f4;border:1px solid #bbb;padding:12px;overflow:auto;white-space:pre-wrap}
+nav a{margin-right:14px}
+.note{border:1px solid #999;padding:10px}
+</style>
+</head>
+<body>
+<h1>Exam Quick Reference - Python + Web Technologies</h1>
+<p class="note"><b>Fast use:</b> Press <b>Ctrl+F</b> and search a short word such as <b>numeric</b>, <b>arithmetic</b>, <b>dictionary</b>, <b>cart</b>, <b>font</b>, <b>background</b>, <b>link</b>, <b>layers</b>, or <b>cursor</b>.</p>
+
+<nav><a href="#python">Python</a><a href="#exp2">Web EXP 2</a><a href="#exp3">Web EXP 3</a></nav>
+
+<h2 id="python">PYTHON</h2>
+
+<h3>PY NUMERIC - Question 1</h3>
+<p class="question">Write a program to demonstrate Different numeric data types.</p>
+<pre>a = 5
+b = 5.7
+c = 2 + 7j
+d = "python"
+
+print("a value is:", a, "\t\tdata type is:", type(a))
+print("b value is:", b, "\tdata type is:", type(b))
+print("c value is:", c, "\tdata type is:", type(c))
+print("d value is:", d, "\tdata type is:", type(d))</pre>
+
+<h3>PY ARITHMETIC - Question 2</h3>
+<p class="question">Write a program to perform different Arithmetic Operations on numbers in Python.</p>
+<pre>n1 = int(input("Enter first number: "))
+n2 = int(input("Enter second number: "))
+
+add = n1 + n2
+sub = n1 - n2
+mul = n1 * n2
+div = n1 / n2
+mdiv = n1 % n2
+fdiv = n1 // n2
+exp = n1 ** n2
+
+print("The addition of", n1, "and", n2, "is:", add)
+print("The subtraction of", n1, "and", n2, "is:", sub)
+print("The multiplication of", n1, "and", n2, "is:", mul)
+print("The division of", n1, "and", n2, "is:", div)
+print("The modulo division of", n1, "and", n2, "is:", mdiv)
+print("The floor division of", n1, "and", n2, "is:", fdiv)
+print("The exponent of", n1, "and", n2, "is:", exp)</pre>
+
+<h3>PY DICTIONARY - Question 4</h3>
+<p class="question">Write a program to demonstrate working with dictionaries in python.</p>
+<pre># Empty dictionary
+my_dict = {}
+print("Empty dictionary is:", my_dict)
+
+# Dictionary with integer keys
+my_dict = {1: 'apple', 2: 'ball'}
+print("Dictionary with integer keys:", my_dict)
+
+# Dictionary with mixed keys
+my_dict = {'name': 'rishi', 1: [2, 4, 3]}
+print("Dictionary with mixed keys:", my_dict)</pre>
+
+<h2 id="exp2">WEB TECHNOLOGIES - EXP 2</h2>
+<p class="question">Design the following static web pages required for an online book store web site: Registration Page and Cart Page.</p>
+
+<h3>WEB CART - Registraion.html</h3>
+<pre>&lt;html&gt;
+&lt;body bgcolor="seagreen"&gt;
+&lt;h1 align="center"&gt;&lt;font color="red"&gt;CART PAGE&lt;/font&gt;&lt;/h1&gt;
+&lt;center&gt;
+&lt;table border="1"&gt;
+&lt;tr&gt;&lt;th&gt;Book Name&lt;/th&gt;&lt;th&gt;Price&lt;/th&gt;&lt;th&gt;Qty&lt;/th&gt;&lt;th&gt;Amount&lt;/th&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Web Programming, Building Internet Applications&lt;/td&gt;&lt;td&gt;500/-&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;1000&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Web Technologies, Black book&lt;/td&gt;&lt;td&gt;400/-&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;1200&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Web Technologies&lt;/td&gt;&lt;td&gt;300/-&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;1200&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td colspan="3"&gt;Total Amount&lt;/td&gt;&lt;td&gt;3400&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+<h3>WEB CATALOGUE - Cart.html</h3>
+<pre>&lt;html&gt;
+&lt;body bgcolor="orange"&gt;
+&lt;h1 align="center"&gt;CATALOGUE PAGE&lt;/h1&gt;
+&lt;center&gt;
+&lt;table border="1"&gt;
+&lt;tr&gt;
+&lt;th&gt;COVER IMAGE&lt;/th&gt;&lt;th&gt;AUTHOR NAME&lt;/th&gt;&lt;th&gt;TEXT BOOK-NAME&lt;/th&gt;&lt;th&gt;PRICE&lt;/th&gt;&lt;th&gt;ADD TO CART&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;img src="c#.jpg" height="105" width="150"&gt;&lt;/td&gt;&lt;td&gt;Harsh Bhasin&lt;/td&gt;&lt;td&gt;Programming in C#&lt;/td&gt;&lt;td&gt;200/-&lt;/td&gt;&lt;td&gt;&lt;input type="button" value="ADD TO CART"&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;img src="cn.jpg" height="105" width="150"&gt;&lt;/td&gt;&lt;td&gt;Andrew S Tanenbaum&lt;/td&gt;&lt;td&gt;Computer Networks&lt;/td&gt;&lt;td&gt;400/-&lt;/td&gt;&lt;td&gt;&lt;input type="button" value="ADD TO CART"&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;img src="wt.jpg" height="105" width="150"&gt;&lt;/td&gt;&lt;td&gt;Chris Bates&lt;/td&gt;&lt;td&gt;Web Programming, Building Internet Applications&lt;/td&gt;&lt;td&gt;599/-&lt;/td&gt;&lt;td&gt;&lt;input type="button" value="ADD TO CART"&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;img src="wt1.jpg" height="105" width="150"&gt;&lt;/td&gt;&lt;td&gt;Kogent&lt;/td&gt;&lt;td&gt;Web Technologies, Black book&lt;/td&gt;&lt;td&gt;499/-&lt;/td&gt;&lt;td&gt;&lt;input type="button" value="ADD TO CART"&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+<h2 id="exp3">WEB TECHNOLOGIES - EXP 3 - CSS</h2>
+<p class="question">Design a web page using CSS: different font/text styles, background images, styles for links, layers and a customized cursor.</p>
+
+<h3>CSS FONT - Fontstyle.html</h3>
+<pre>&lt;html&gt;
+&lt;head&gt;&lt;link rel="stylesheet" href="font.css"&gt;&lt;/head&gt;
+&lt;body&gt;
+&lt;p class="center"&gt;My text with font-arial&lt;/p&gt;
+&lt;p class="right"&gt;My text with font-calibre&lt;/p&gt;
+&lt;p class="left"&gt;My text with font-cooper&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+<h3>CSS FONT - font.css</h3>
+<pre>p.center {
+ color:pink; text-align:center; letter-spacing:3px;
+ font-family:arial; font-variant:small-caps; font-weight:bold;
+}
+p.right {
+ color:orange; text-align:right; letter-spacing:10px;
+ font-family:calibri; text-transform:uppercase; font-weight:bold;
+}
+p.left {
+ color:green; text-align:left; letter-spacing:15px;
+ font-family:cooper; text-transform:uppercase; font-weight:bold;
+}</pre>
+
+<h3>CSS BACKGROUND - background.html</h3>
+<pre>&lt;html&gt;
+&lt;head&gt;
+&lt;style type="text/css"&gt;
+body { background-image:url(wt.jpg); background-repeat:repeat; }
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;&lt;h1 align="center"&gt;WebTechnology&lt;/h1&gt;&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+<h3>CSS BACKGROUND - background-image.html</h3>
+<pre>&lt;html&gt;
+&lt;head&gt;
+&lt;style type="text/css"&gt;
+body {
+ background-image:url(wt.jpg); background-color:pink;
+ background-repeat:no-repeat; background-position:center;
+ background-attachment:fixed;
+}
+h1 {
+ background-image:url(wt1.jpg); background-position:right;
+ color:red; background-repeat:no-repeat;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;&lt;h1 align="center"&gt;WEB TECHNOLOGY&lt;br&gt;&lt;/h1&gt;&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+<h3>CSS LINK - Link.html</h3>
+<pre>&lt;html&gt;
+&lt;head&gt;
+&lt;style type="text/css"&gt;
+a:link { color:red; text-decoration:overline; font-family:arial; font-size:small; }
+a:visited { color:yellow; text-decoration:line-through; font-family:arial; font-size:small; }
+a:hover { color:blue; text-decoration:overline; font-family:arial; font-size:small; }
+a:active { color:green; text-decoration:overline; font-family:arial; font-size:small; }
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body bgcolor="pink"&gt;
+&lt;center&gt;
+&lt;a href="wt.jpg" target="_blank"&gt;Link&lt;/a&gt;&lt;br&gt;&lt;br&gt;
+&lt;a href="wt1.jpg" target="_blank"&gt;Link1&lt;/a&gt;&lt;br&gt;&lt;br&gt;
+&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+<h3>CSS LAYERS - layers.html</h3>
+<pre>&lt;html&gt;
+&lt;body bgcolor="white" align="left"&gt;
+&lt;h1 style="background-color:blue; position:relative; top:0px; left:0px; z-index:2; height:100px;"&gt;This is heading-1.&lt;/h1&gt;
+&lt;h2 style="background-color:green; position:relative; top:30px; left:50px; z-index:3; height:100px;"&gt;This is heading-2.&lt;/h2&gt;
+&lt;h3 style="background-color:red; position:relative; top:55px; left:100px; z-index:1; height:100px;"&gt;This is heading-3.&lt;/h3&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+<h3>CSS CURSOR - cursor.html</h3>
+<pre>&lt;html&gt;
+&lt;body&gt;
+&lt;p style="cursor:not-allowed;"&gt;NOT-ALLOWED CURSOR&lt;/p&gt;
+&lt;p style="cursor:progress;"&gt;PROGRESS CURSOR&lt;/p&gt;
+&lt;p style="cursor:wait;"&gt;WAIT CURSOR&lt;/p&gt;
+&lt;p style="cursor:zoom-in;"&gt;ZOOM-IN CURSOR&lt;/p&gt;
+&lt;p style="cursor:zoom-out;"&gt;ZOOM-OUT CURSOR&lt;/p&gt;
+&lt;p style="cursor:no-drop;"&gt;NO-DROP CURSOR&lt;/p&gt;
+&lt;p style="cursor:move;"&gt;MOVE CURSOR&lt;/p&gt;
+&lt;p style="cursor:default;"&gt;DEFAULT CURSOR&lt;/p&gt;
+&lt;p style="cursor:crosshair;"&gt;CROSSHAIR CURSOR&lt;/p&gt;
+&lt;p style="cursor:help;"&gt;HELP CURSOR&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+<p class="note"><b>Practice:</b> Python can be run at Programiz or OneCompiler. HTML/CSS can be saved as .html/.css and opened in a browser. Use these notes in the lab only if your exam rules permit external reference material.</p>
+</body>
+</html>
